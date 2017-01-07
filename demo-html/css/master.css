@@ -1,0 +1,129 @@
+/*---- General ----*/
+html{
+ height:100%;
+ min-height:100%;
+ }
+body{
+ min-height:100%;
+ box-sizing: border-box;
+ padding-top: 70px;
+ color:#fff;
+ font-family: 'Raleway', sans-serif;
+ text-align: center;
+ }
+body{
+  background-color: #2a2d3d;
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/*---- Loadbar ----*/
+div.loadbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 0;
+  height: 0;
+  background-color: #06f;
+  z-index: 9999;
+  transition: width 0.5s ease,height 0.2s ease;
+}
+/*---- Menu ----*/
+div#menu{
+  box-sizing: border-box;
+  padding-top: 70px;
+  position: fixed;
+  top:0;
+  left:-100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #050505;
+  transition: left 0.5s ease;
+  border-right:1px solid #050505;
+}
+div#menu.open{
+  left:0;
+}
+div#menu ul{
+  margin:0;
+  padding: 0;
+}
+div#menu a:link,div#menu a:visited{
+  color:#fff;
+  text-decoration: none;
+}
+div#menu li{
+  list-style: none;
+  margin: 2px 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  font-size: 30px;
+  border-bottom:1px solid #000;
+  background-color: #090909;
+  border-top:1px solid #0f0f0f;
+}
+div#menu li:active{
+  border-top:1px solid #000;
+  border-bottom:1px solid #0f0f0f;
+}
+/*---- Header ----*/
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+header div.menu{
+  z-index: 99999;
+  display: block;
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-image: url('../img/bars.png');
+  background-image: url('../img/bars.svg');
+}
+header div.logo{
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 60px;
+  width: 90px;
+  background-image: url('../img/logo.png');
+  background-image: url('../img/logo.svg');
+  background-repeat: no-repeat;
+}
+header div.menu{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 60px;
+  width: 50px;
+  background-image: url('../img/bars.png');
+  background-image: url('../img/bars.svg');
+  background-repeat: no-repeat;
+}
+header div#fscr {
+  position: fixed;
+  top:0;
+  right: 100px;
+  height: 60px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+header div#fscr.full{
+  background-image: url('../img/full.png');
+  background-image: url('../img/full.svg');
+}
+header div#fscr.min{
+  background-image: url('../img/min.png');
+  background-image: url('../img/min.svg');
+}
+/*---- Player ----*/
+section.player img{
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
