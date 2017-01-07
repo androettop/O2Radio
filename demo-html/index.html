@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MiRadio</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style media="screen">
+    body{
+      margin: 0;
+    }
+    div.loader{
+      z-index: 99999;
+      position: fixed;
+      top:0;
+      left:0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #171717;
+      background-image: url('img/loading.png');
+      background-image: url('img/loading.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+    }
+    @media screen and (min-width:600px) {
+      div.loader{
+        background-size: 300px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div> <!-- Loader -->
+    <div class="loadbar"></div> <!-- Loader bar -->
+    <div id="menu">
+      <ul>
+        <a href="#"><li>Inicio</li></a>
+        <a href="#"><li>Noticias</li></a>
+        <a href="#"><li>Programas</li></a>
+      </ul>
+    </div>
+    <!--Page Start-->
+
+    <header>
+      <div class="menu"></div>
+      <div id="fscr" class="full"></div>
+      <div class="logo"></div>
+    </header>
+    <section class="player">
+      <h1>Estas escuchando:</h1>
+      <img class="playing" src="img/music.jpg">
+      <div class="buttons">
+
+      </div>
+    </section>
+    <!--Page End-->
+    <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        setTimeout(
+        function()
+        {
+        $("div.loader").fadeOut(500);
+        }, 1000);
+      });
+      /*---- Full screen button ----*/
+      $("#fscr").click(function(){
+        go_fullscreen();
+        if($(this).hasClass("full")){
+          go_fullscreen();
+          $(this).removeClass("full").addClass("min");
+        }else{
+          cancel_fullscreen();
+          $(this).removeClass("min").addClass("full");
+        }
+      });
+      /*----Menu button ----*/
+      $("header .menu").click(function(){
+        if($("#menu").hasClass("open")){
+          $("#menu").removeClass("open");
+        }else{
+          $("#menu").addClass("open");
+        }
+      });
+      function go_fullscreen(){
+        var elem = document.documentElement;
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+          elem.webkitRequestFullscreen();
+        }
+      }
+      function cancel_fullscreen(){
+        if(document.exitFullscreen) {
+          document.exitFullscreen();
+        }else if(document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if(document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+      /*---- Ajax test ----/
+      $('div.loadbar').css("width","25%");
+      $('div.loadbar').height(4);
+      $.ajax({
+        method: "POST",
+        url: "http://192.168.0.51",
+        data: { name: "John", location: "Boston" }
+      })
+        .done(function( msg ) {
+          $('div.loadbar').css("width","100%");
+          setTimeout(
+          function()
+          {
+          $('div.loadbar').height(0);
+          }, 1000);
+        });
+      */
+    </script>
+  </body>
+</html>
