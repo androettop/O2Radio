@@ -2,8 +2,6 @@
 
 <h2>De que se trat<strong>a el proyecto?</strong></h2>
 <p>Estamos desarrollando un sistema de <strong>código abierto</strong> para que cualquier persona pueda tener su propia <strong>radio en la web y en dispositivos móviles</strong>, sin tener gastos de software.</p>
-<p><strong>El codigo del proyecto pronto está disponible en github</strong> para que pueda ir viendo los avances y para que, si lo desea, tambien pueda contribuir dando sugerencias o buscando errores en el código.</p>
-<p>Link de Github: <a rel="noopener" href="https://github.com/pablo12321/O2Radio">https://github.com/pablo12321/O2Radio</a></p>
 <p>Nos estamos basando en Oxigen, un sistema de uso general para páginas web que desarrollamos con anterioridad.</p>
 <p>Link del sistema base oxigen: <a target="_blank" rel="noopener" href="https://github.com/OxigenArts/Oxigen">https://github.com/OxigenArts/Oxigen</a>
 <h2>Características del sistema</h2>
