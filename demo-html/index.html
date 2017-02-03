@@ -58,7 +58,7 @@
       <img class="playing" src="img/music.jpg">
       <div class="buttons">
         <img id="play" src="img/play.png">
-        <audio src="http://c3live-sm.mediainbox.net/cadena3.mp3"></audio>
+        <audio id="audio" style="display:none;" src="http://c3live-sm.mediainbox.net/cadena3.mp3"></audio>
       </div>
     </section>
     <!--Page End-->
@@ -66,6 +66,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <script type="text/javascript">
+
+    var v = document.getElementsById("audio")[0];
+      v.play();
       $(document).ready(function(){
         setTimeout(
         function()
