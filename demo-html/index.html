@@ -69,10 +69,10 @@
       <h1>Estas escuchando:</h1>
       <img class="playing" src="img/music.jpg">
       <div class="buttons">
-        <video style="height: 30px;width: 240px;" controls>
+        <audio style="width: 240px;" controls>
           <source src="http://c3live-sm.mediainbox.net/cadena3.mp3">
           Tu navegador no implementa el elemento <code>video</code>.
-        </video>
+        </audio>
         <div class="apps">
           <img src="img/ios.gif">
           <img src="img/and.png">
@@ -85,7 +85,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <script type="text/javascript">
-      var v = document.getElementsByTagName("video")[0];
+      var v = document.getElementsByTagName("audio")[0];
       v.play();
       $(document).ready(function(){
         setTimeout(
