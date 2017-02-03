@@ -58,7 +58,10 @@
       <img class="playing" src="img/music.jpg">
       <div class="buttons">
         <img id="play" src="img/play.png">
-        <audio id="audio" style="display:none;" src="http://c3live-sm.mediainbox.net/cadena3.mp3"></audio>
+        <video controls>
+          <source src="http://c3live-sm.mediainbox.net/cadena3.mp3">
+          Tu navegador no implementa el elemento <code>video</code>.
+        </video>
       </div>
     </section>
     <!--Page End-->
@@ -67,7 +70,7 @@
 
     <script type="text/javascript">
 
-    var v = document.getElementsById("audio")[0];
+      var v = document.getElementsByTagName("video")[0];
       v.play();
       $(document).ready(function(){
         setTimeout(
