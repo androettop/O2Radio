@@ -34,6 +34,14 @@
         background-size: 300px;
       }
     }
+    @media screen and (max-width:600px) {
+      div.apps{
+        display: none;
+      }
+      div.apps img{
+        height: 60px; 
+      }
+    }
     </style>
   </head>
   <body>
@@ -61,6 +69,10 @@
           <source src="http://c3live-sm.mediainbox.net/cadena3.mp3">
           Tu navegador no implementa el elemento <code>video</code>.
         </video>
+        <div class="apps">
+          <img src="img/ios.gif">
+          <img src="img/and.png">
+        </div>
       </div>
     </section>
     <!--Page End-->
