@@ -14,5 +14,3 @@
 </ul>
 <p>Además del sistema web estamos desarrollando la aplicación para dispositivos<strong> Android e iOS</strong> con las mismas funciones que el sitio web.</p>
 <p>El sistema se podrá <strong>descargar gratuitamente</strong> para instalar en cualquier servidor que disponga de las características necesarias.</p>
-
-<p>Puede ver la web de la campaña de Indiegogo en : <a target="_blank" rel="noopener" href="https://www.indiegogo.com/at/o2sistemaradio/x/10656868">https://www.indiegogo.com/at/o2sistemaradio/x/10656868</a></p>
